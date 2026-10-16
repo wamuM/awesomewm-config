@@ -353,6 +353,9 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "Escape", function () awful.spawn("power-options") end,
               {description = "power options", group = "desktop"}),
 
+    awful.key({}, "Print", function() awful.spawn("screenshot") end,
+              {description = "print screen", group = "desktop"}),
+
     awful.key({ modkey },            "r",     function () awful.spawn("launcher") end,
               {description = "run the launcher", group = "desktop"}),
 
